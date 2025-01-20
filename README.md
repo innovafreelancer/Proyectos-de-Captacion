@@ -127,3 +127,7 @@ Este repositorio es una oportunidad para mostrar tus habilidades técnicas y tu 
 ```
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 669523483a8e39666634f9d1047d3328473fa29e
