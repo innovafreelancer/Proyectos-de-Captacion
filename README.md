@@ -1,11 +1,17 @@
 ```markdown
 # 🌟 Proyectos de Captación 🌟
 
-¡Bienvenido al repositorio **Proyectos de Captación**! Este espacio está diseñado para que los programadores demuestren sus habilidades en GitHub y en lenguajes de programación específicos a través de proyectos de prueba. Aquí podrás mostrar tu conocimiento y capacidad técnica, ya sea en desarrollo **Frontend**, **Backend** o **Fullstack**.
+¡Bienvenido al repositorio **Proyectos de Captación**! Este espacio está diseñado para
+que los programadores demuestren sus habilidades en GitHub y en lenguajes de programación
+específicos a través de proyectos de prueba. Aquí podrás mostrar tu conocimiento y capacidad
+técnica, ya sea en desarrollo **Frontend**, **Backend** o **Fullstack**.
 
 ## 🎯 Objetivo
 
-El objetivo de este repositorio es facilitar la captación de personal mediante la creación de proyectos donde los candidatos puedan demostrar sus competencias técnicas y su familiaridad con las buenas prácticas en GitHub. Cada candidato tendrá la oportunidad de trabajar en un proyecto individual, siguiendo las pautas establecidas a continuación.
+El objetivo de este repositorio es facilitar la captación de personal mediante la creación de proyectos
+donde los candidatos puedan demostrar sus competencias técnicas y su familiaridad con las buenas prácticas
+en GitHub. Cada candidato tendrá la oportunidad de trabajar en un proyecto individual, siguiendo las pautas
+establecidas a continuación.
 
 ## 🛠️ Uso del Repositorio
 
@@ -18,14 +24,15 @@ El repositorio está organizado por ramas y carpetas, según el rol del programa
   - `backend`
   - `fullstack`
 
-Cada programador debe crear su propia carpeta dentro de la rama correspondiente a su rol. Esta carpeta contendrá todo el código relacionado con su proyecto de captación.
+Cada programador debe crear su propia carpeta dentro de la rama correspondiente a su rol. Esta carpeta contendrá todo el
+código relacionado con su proyecto de captación.
 
 ### 🚀 Proceso para Contribuir
 
 1. **Clonar el Repositorio:**
    Clona el repositorio en tu máquina local utilizando el siguiente comando:
    ```
-   git clone https://github.com/tu-usuario/proyectos-de-captacion.git
+   git clone https://github.com/innovafreelancer/proyectos-de-captacion.git
    ```
 
 2. **Crear una Nueva Rama:**
@@ -44,7 +51,8 @@ Cada programador debe crear su propia carpeta dentro de la rama correspondiente 
    Coloca todos los archivos relacionados con tu proyecto dentro de esta nueva carpeta.
 
 5. **Hacer Commits como un Programador Profesional:**
-   - **Frecuencia de Commits:** Realiza commits frecuentemente, idealmente cada vez que completes una pequeña funcionalidad o corrijas un error.
+   - **Frecuencia de Commits:** Realiza commits frecuentemente, idealmente cada vez que completes una pequeña funcionalidad
+      o corrijas un error.
    - **Commits Relacionados:** Asegúrate de que cada commit contenga cambios relacionados.
    - **Mensajes Claros:** Escribe mensajes claros y descriptivos para cada commit que expliquen qué cambios realizaste.
 
@@ -62,7 +70,8 @@ Cada programador debe crear su propia carpeta dentro de la rama correspondiente 
    ```
 
 8. **Crear un Pull Request:**
-   Una vez que hayas subido tus cambios, crea un Pull Request desde tu rama hacia la rama principal del repositorio. Asegúrate de proporcionar una descripción clara sobre lo que has implementado.
+   Una vez que hayas subido tus cambios, crea un Pull Request desde tu rama hacia la rama principal del repositorio. Asegúrate de proporcionar
+    una descripción clara sobre lo que has implementado.
 
 ## ✅ Buenas Prácticas
 
