@@ -29,8 +29,7 @@ código relacionado con su proyecto de captación.
 
 ### 🚀 Descargando el Código
 
-Para descargar el código adecuado, asegúrate de clonar la rama correspondiente a tu interés. La rama principal (`main`) tiene
-una estructura de carpetas diferente y no es adecuada para todos los propósitos. Sigue estos pasos:
+Para descargar el código adecuado, asegúrate de clonar la rama correspondiente a tu interés. La rama principal (`main`) tiene una estructura de carpetas diferente y no es adecuada para todos los propósitos. Sigue estos pasos:
 
 1. **Clonar el Repositorio:**
    Clona el repositorio en tu máquina local utilizando el siguiente comando:
@@ -90,8 +89,7 @@ una estructura de carpetas diferente y no es adecuada para todos los propósitos
    ```
    git push -u origin johndoe-frontend-abc-dev
    ```
-   El `-u` establece un seguimiento entre tu rama local y la rama remota, lo que significa que en futuras ocasiones podrás usar simplemente `git push`
-   sin especificar el nombre de la rama.
+   El `-u` establece un seguimiento entre tu rama local y la rama remota, lo que significa que en futuras ocasiones podrás usar simplemente `git push` sin especificar el nombre de la rama.
 
 5. **Fetch antes de Push:**
    Antes de hacer un `push`, asegúrate de realizar un `fetch` para actualizar tu rama local con los cambios más recientes del repositorio remoto:
@@ -107,8 +105,7 @@ una estructura de carpetas diferente y no es adecuada para todos los propósitos
    ```
 
 7. **Crear un Pull Request:**
-   Una vez que hayas subido tus cambios, crea un Pull Request desde tu rama hacia la rama principal del repositorio(depende del rol backend-fronted-fullstack). Asegúrate
-   de proporcionar una descripción clara sobre lo que has implementado.
+   Una vez que hayas subido tus cambios, crea un Pull Request desde tu rama hacia la rama principal del repositorio. Asegúrate de proporcionar una descripción clara sobre lo que has implementado.
 
 ## ✅ Buenas Prácticas
 
@@ -119,15 +116,9 @@ una estructura de carpetas diferente y no es adecuada para todos los propósitos
 
 ## 🎉 Conclusión
 
-Este repositorio es una oportunidad para mostrar tus habilidades técnicas y tu capacidad para trabajar con GitHub. Estamos emocionados por ver lo que puedes crear.
-¡Buena suerte!
+Este repositorio es una oportunidad para mostrar tus habilidades técnicas y tu capacidad para trabajar con GitHub. Estamos emocionados por ver lo que puedes crear. ¡Buena suerte!
 
 ---
 **¡Esperamos verte pronto en nuestros proyectos! 🚀**
 ```
 
-
-<<<<<<< HEAD
-=======
-
->>>>>>> 669523483a8e39666634f9d1047d3328473fa29e
