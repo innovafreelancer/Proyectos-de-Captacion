@@ -27,7 +27,10 @@ El repositorio está organizado por ramas y carpetas, según el rol del programa
 Cada programador debe crear su propia carpeta dentro de la rama correspondiente a su rol. Esta carpeta contendrá todo el
 código relacionado con su proyecto de captación.
 
-### 🚀 Proceso para Contribuir
+### 🚀 Descargando el Código
+
+Para descargar el código adecuado, asegúrate de clonar la rama correspondiente a tu interés. La rama principal (`main`) tiene
+una estructura de carpetas diferente y no es adecuada para todos los propósitos. Sigue estos pasos:
 
 1. **Clonar el Repositorio:**
    Clona el repositorio en tu máquina local utilizando el siguiente comando:
@@ -35,43 +38,77 @@ código relacionado con su proyecto de captación.
    git clone https://github.com/innovafreelancer/proyectos-de-captacion.git
    ```
 
-2. **Crear una Nueva Rama:**
-   Cambia a la rama correspondiente a tu rol:
+2. **Cambiar a la Carpeta del Proyecto:**
+   Navega a la carpeta del proyecto:
    ```
-   git checkout -b nombre-de-tu-rama
+   cd proyectos-de-captacion
    ```
 
-3. **Crear una Carpeta para Tu Proyecto:**
-   Dentro de la rama, crea una nueva carpeta con tu nombre o un identificador único:
+3. **Cambiar a la Rama Adecuada:**
+   Luego, cambia a la rama que necesitas:
+   - Para Frontend:
+     ```
+     git checkout frontend
+     ```
+   - Para Backend:
+     ```
+     git checkout backend
+     ```
+   - Para Fullstack:
+     ```
+     git checkout fullstack
+     ```
+
+4. **Crear una Nueva Rama Local:**
+   A partir de la rama adecuada, crea una nueva rama local que derive de esta. Utiliza el siguiente formato para nombrarla:
+   ```
+   <usuariogithub>-<rol>-<iniciales-del-proyecto>-dev
+   ```
+   Por ejemplo, si tu usuario es `johndoe`, estás trabajando en el rol `frontend`, y las iniciales del proyecto son `abc`, puedes crear la nueva rama con el siguiente comando:
+   ```
+   git checkout -b johndoe-frontend-abc-dev
+   ```
+
+### 🚀 Proceso para Contribuir
+
+1. **Crear una Carpeta para Tu Proyecto:**
+   Dentro de la nueva rama, crea una nueva carpeta con tu nombre o un identificador único:
    ```
    mkdir tu-nombre-o-id
    ```
 
-4. **Agregar Tu Código:**
+2. **Agregar Tu Código:**
    Coloca todos los archivos relacionados con tu proyecto dentro de esta nueva carpeta.
 
-5. **Hacer Commits como un Programador Profesional:**
-   - **Frecuencia de Commits:** Realiza commits frecuentemente, idealmente cada vez que completes una pequeña funcionalidad
-      o corrijas un error.
+3. **Hacer Commits como un Programador Profesional:**
+   - **Frecuencia de Commits:** Realiza commits frecuentemente, idealmente cada vez que completes una pequeña funcionalidad o corrijas un error.
    - **Commits Relacionados:** Asegúrate de que cada commit contenga cambios relacionados.
    - **Mensajes Claros:** Escribe mensajes claros y descriptivos para cada commit que expliquen qué cambios realizaste.
 
-6. **Fetch antes de Push:**
+4. **Publicar la Nueva Rama (si es la primera vez):**
+   Si esta es la primera vez que subes esta rama local al repositorio remoto, necesitarás publicarla. Usa el siguiente comando para hacerlo:
+   ```
+   git push -u origin johndoe-frontend-abc-dev
+   ```
+   El `-u` establece un seguimiento entre tu rama local y la rama remota, lo que significa que en futuras ocasiones podrás usar simplemente `git push`
+   sin especificar el nombre de la rama.
+
+5. **Fetch antes de Push:**
    Antes de hacer un `push`, asegúrate de realizar un `fetch` para actualizar tu rama local con los cambios más recientes del repositorio remoto:
    ```
    git fetch origin
    ```
    Si hay conflictos, resuélvelos antes de proceder.
 
-7. **Hacer Push:**
+6. **Hacer Push:**
    Una vez que hayas resuelto cualquier conflicto y estés listo para compartir tus cambios, haz push a tu rama:
    ```
-   git push origin nombre-de-tu-rama
+   git push origin johndoe-frontend-abc-dev
    ```
 
-8. **Crear un Pull Request:**
-   Una vez que hayas subido tus cambios, crea un Pull Request desde tu rama hacia la rama principal del repositorio. Asegúrate de proporcionar
-    una descripción clara sobre lo que has implementado.
+7. **Crear un Pull Request:**
+   Una vez que hayas subido tus cambios, crea un Pull Request desde tu rama hacia la rama principal del repositorio(depende del rol backend-fronted-fullstack). Asegúrate
+   de proporcionar una descripción clara sobre lo que has implementado.
 
 ## ✅ Buenas Prácticas
 
@@ -82,9 +119,11 @@ código relacionado con su proyecto de captación.
 
 ## 🎉 Conclusión
 
-Este repositorio es una oportunidad para mostrar tus habilidades técnicas y tu capacidad para trabajar con GitHub. Estamos emocionados por ver lo que puedes crear. ¡Buena suerte!
+Este repositorio es una oportunidad para mostrar tus habilidades técnicas y tu capacidad para trabajar con GitHub. Estamos emocionados por ver lo que puedes crear.
+¡Buena suerte!
 
 ---
 **¡Esperamos verte pronto en nuestros proyectos! 🚀**
 ```
+
 
