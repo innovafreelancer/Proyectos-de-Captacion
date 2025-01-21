@@ -1,8 +1,8 @@
-import { MyComponent } from './components/MyComponent';
+import { CurrentWeatherComponent } from './components/CurrentWeatherComponent';
 function App() {
   return (
     <>
-      <MyComponent/>
+      <CurrentWeatherComponent/>
     </>
   );
 }
