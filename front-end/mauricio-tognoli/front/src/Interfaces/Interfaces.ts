@@ -69,4 +69,14 @@ interface UserLocation {
   longitude: number;
 }
 
-export type { WeatherData, ForecastData, UserLocation };
+
+interface WeatherContextProps {
+    weatherData: WeatherData | null;
+    hourlyForecast: ForecastData | null;
+    weeklyForecast: unknown | null;
+    units: "metric" | "imperial";
+    changeUnits: (units: "metric" | "imperial") => void;
+    fetchWeather: () => Promise<void>;
+  }
+
+export type { WeatherData, ForecastData, UserLocation, WeatherContextProps };
