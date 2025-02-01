@@ -1,10 +1,16 @@
-const Navbar = () => {
+import React from "react";
+import SearchAutocomplete from "./SearchAutocomplete";
+
+export const Navbar: React.FC = () => {
+  
+
   return (
-    <div>
-      <h1>WeatherWeb</h1>
-      <input type="text" placeholder="Search for Cities" />
-    </div>
+    <nav className="flex justify-between items-center p-4 bg-blue-500 text-white">
+      <div className="text-xl font-bold">WeatherWeb</div>
+      <div className="flex items-center gap-4 w-full max-w-lg">
+      <SearchAutocomplete/>
+       
+      </div>
+    </nav>
   );
 };
-
-export default Navbar;
