@@ -2,22 +2,25 @@
 import { useWeather } from "@/context/WeatherContext";
 import { formatLocalTime } from "@/utils/timeUtils";
 import { translations } from "@/utils/translations";
+import Image from "next/image";
+import { FadeLoader } from "react-spinners";
 
 const WeatherCard = () => {
   const { weatherData, unit, language } = useWeather();
   const t = translations[language as keyof typeof translations];
 
-  if (!weatherData) return <p>{t.loading}</p>;
+  if (!weatherData) return <div className="flex justify-center items-center h-screen"><FadeLoader color="#60a5fa" /></div>;
 
   return (
     <div className="bg-blue-400 dark:bg-dark-secondary p-4 rounded-lg shadow-xl dark:shadow-gray-700/50">
       <h2 className="text-xl font-bold">{weatherData.name}</h2>
       <p>{formatLocalTime(weatherData.dt, weatherData.timezone)}</p>
       <div className="flex items-center">
-        <img
+        <Image
           src={`http://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`}
           alt={weatherData.weather[0].description}
-          className="w-16 h-16"
+          width={64}
+          height={64}
         />
         <p className="text-4xl font-bold">
           {Math.round(weatherData.main.temp)}°{unit === "metric" ? "C" : "F"}

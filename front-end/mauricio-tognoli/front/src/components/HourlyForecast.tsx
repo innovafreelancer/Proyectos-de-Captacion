@@ -2,12 +2,13 @@
 import { useWeather } from '@/context/WeatherContext';
 import { formatLocalTime } from '@/utils/timeUtils';
 import { translations } from '@/utils/translations';
+import Image from 'next/image';
 
 const HourlyForecast = () => {
   const { forecastData, unit, language } = useWeather();
   const t = translations[language as keyof typeof translations];
 
-  if (!forecastData || !forecastData.list) return <p>{t.loading}</p>;
+  if (!forecastData || !forecastData.list) return <></>;
 
   const hourlyData = forecastData.list.slice(0, 4).filter((item) => item.dt && item.main && item.weather);
 
@@ -20,10 +21,12 @@ const HourlyForecast = () => {
             <p className="font-bold">
               {formatLocalTime(hour.dt, forecastData.city.timezone)}
             </p>
-            <img
+            <Image
               src={`http://openweathermap.org/img/wn/${hour.weather[0].icon}.png`}
               alt={hour.weather[0].description}
-              className="w-10 h-10 mx-auto"
+              className="mx-auto"
+              width={40}
+              height={40}
             />
             <p className="text-lg font-bold">
               {Math.round(hour.main.temp)}°{unit === 'metric' ? 'C' : 'F'}

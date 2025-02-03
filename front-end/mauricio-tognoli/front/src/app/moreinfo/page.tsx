@@ -13,12 +13,13 @@ import {
   FaMoon,
 } from "react-icons/fa";
 import { translations } from "@/utils/translations";
+import { FadeLoader } from "react-spinners";
 
 const MoreInfo = () => {
   const { weatherData, unit, language } = useWeather();
   const t = translations[language as keyof typeof translations];
 
-  if (!weatherData) return <p>{t.loading}</p>;
+  if (!weatherData) return <div className="flex justify-center items-center h-screen"><FadeLoader color="#60a5fa" /></div>;
 
   const getWindDirection = (degrees: number) => {
     const directions = [
@@ -47,7 +48,7 @@ const MoreInfo = () => {
 
       {/* Condiciones Actuales */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
+        <div className="bg-blue-400 dark:bg-dark-secondary p-6 rounded-lg shadow">
           <h2 className="text-xl font-bold mb-4 flex items-center">
             <FaTemperatureHigh className="mr-2" /> {t.currentConditions}
           </h2>
@@ -74,7 +75,7 @@ const MoreInfo = () => {
         </div>
 
         {/* Viento y Visibilidad */}
-        <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
+        <div className="bg-blue-400 dark:bg-dark-secondary p-6 rounded-lg shadow">
           <h2 className="text-xl font-bold mb-4 flex items-center">
             <FaWind className="mr-2" /> {t.windAndVisibility}
           </h2>
@@ -95,7 +96,7 @@ const MoreInfo = () => {
         </div>
 
         {/* Nubosidad y Coordenadas */}
-        <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
+        <div className="bg-blue-400 dark:bg-dark-secondary p-6 rounded-lg shadow">
           <h2 className="text-xl font-bold mb-4 flex items-center">
             <FaCloud className="mr-2" /> {t.cloudinessAndCoordinates}
           </h2>
@@ -116,7 +117,7 @@ const MoreInfo = () => {
         </div>
 
         {/* Amanecer y Atardecer */}
-        <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
+        <div className="bg-blue-400 dark:bg-dark-secondary p-6 rounded-lg shadow">
           <h2 className="text-xl font-bold mb-4 flex items-center">
             <FaSun className="mr-2" /> {t.sunriseAndSunset}
           </h2>

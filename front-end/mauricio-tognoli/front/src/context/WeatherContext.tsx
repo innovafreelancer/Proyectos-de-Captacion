@@ -38,8 +38,6 @@ export const WeatherProvider = ({
       try {
         const weather = await getWeather(city, unit);
         const forecast = await getForecast(city, unit);
-        console.log("Weather Data:", weather);
-        console.log("Forecast Data:", forecast);
         setWeatherData(weather);
         setForecastData(forecast);
       } catch (error) {

@@ -3,12 +3,13 @@ import { ForecastItem } from "@/Interfaces/forecast";
 import { useWeather } from "../context/WeatherContext";
 import { formatLocalDate } from "@/utils/timeUtils";
 import { translations } from "@/utils/translations";
+import Image from "next/image";
 
 const WeeklyForecast = () => {
   const { forecastData, unit, language } = useWeather();
   const t = translations[language as keyof typeof translations];
 
-  if (!forecastData || !forecastData.list) return <p>{t.loading}</p>;
+  if (!forecastData || !forecastData.list) return <></>
 
   const dailyData: { [key: string]: ForecastItem[] } = {};
   forecastData.list.forEach((item) => {
@@ -52,10 +53,11 @@ const WeeklyForecast = () => {
                 <p className="text-sm">{new Date(date).toLocaleDateString()}</p>
               </div>
               <div className="flex items-center">
-                <img
+                <Image
                   src={`http://openweathermap.org/img/wn/${weather.icon}.png`}
                   alt={weather.description}
-                  className="w-10 h-10"
+                  width={40}
+                  height={40}
                 />
                 <p className="capitalize text-sm">{weather.description}</p>
               </div>
