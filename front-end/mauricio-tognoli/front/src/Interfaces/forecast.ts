@@ -1,4 +1,4 @@
-import { Weather, Main, Wind } from './weather';
+import { Weather, Main, Wind } from "./weather";
 
 export interface ForecastItem {
   dt: number;

@@ -25,11 +25,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
    return (
-    <html lang="en">
-      <body className="flex bg-gray-100">
+    <html lang="es">
+      <body className="flex bg-light-primary dark:bg-black text-dark-primary dark:text-light-primary">
         <WeatherProvider>
-          <Sidebar/>
-          <main className="flex-1 p-4 ml-0 md:ml-64 transition-all duration-300">
+          <Sidebar />
+          <main className="flex-1 p-4 ml-0 transition-all duration-300">
             {children}
           </main>
         </WeatherProvider>

@@ -1,12 +1,14 @@
-'use client'
-import { useState, useEffect } from 'react';
-import { getCitySuggestions } from '../api/CityService';
-import { useWeather } from '../context/WeatherContext';
+"use client";
+import { useState, useEffect } from "react";
+import { getCitySuggestions } from "../api/CityService";
+import { useWeather } from "../context/WeatherContext";
+import { translations } from "@/utils/translations";
 
 const SearchAutocomplete = () => {
-  const { setCity } = useWeather();
-  const [inputValue, setInputValue] = useState('');
+  const { setCity, language } = useWeather();
+  const [inputValue, setInputValue] = useState("");
   const [suggestions, setSuggestions] = useState<string[]>([]);
+  const t = translations[language as keyof typeof translations];
 
   useEffect(() => {
     const debounce = setTimeout(async () => {
@@ -24,7 +26,7 @@ const SearchAutocomplete = () => {
         type="text"
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
-        placeholder='Search City...'
+        placeholder={t.searchCity}
         className="p-2 border rounded-lg"
       />
       {suggestions.length > 0 && (
@@ -33,8 +35,8 @@ const SearchAutocomplete = () => {
             <li
               key={index}
               onClick={() => {
-                setCity(suggestion.split(',')[0]);
-                setInputValue('');
+                setCity(suggestion.split(",")[0]);
+                setInputValue("");
                 setSuggestions([]);
               }}
               className="p-2 hover:bg-gray-100 cursor-pointer"
@@ -48,4 +50,4 @@ const SearchAutocomplete = () => {
   );
 };
 
-export default SearchAutocomplete
+export default SearchAutocomplete;
